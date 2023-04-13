@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^r5_2n1avbip0lmg1jx5qsw%$9=t3*mnkcqx3y*zsj3v&d$s*f'
+SECRET_KEY = 'YOUR_OWN_SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'demo',
-        'USER': 'admin',
-        'PASSWORD': '11111111',
-        'HOST':'database-demo1.cbz8ui4fno9n.us-west-2.rds.amazonaws.com',
+        'NAME': 'SCHEMA_NAME',
+        'USER': 'USER_NAME',
+        'PASSWORD': 'YOUR_OWN_PASSWORD',
+        'HOST':'HOST_NAME',
         'PORT':'3306',
     }
 }
